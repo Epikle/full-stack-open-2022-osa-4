@@ -19,7 +19,7 @@ const errorHandler = (error, req, res, next) => {
 };
 
 const unknownEndpoint = (req, res) => {
-  response.status(404).json({ error: 'unknown endpoint' });
+  res.status(404).json({ error: 'unknown endpoint' });
 };
 
 const tokenExtractor = (req, res, next) => {
